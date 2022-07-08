@@ -1,9 +1,6 @@
 # ml-framework
 Machine Learning Algorithms Implemented
 ------------------------------------------
-
-mllab
---------
 Naive Bayes
 --
 Linear Regression
