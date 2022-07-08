@@ -2,12 +2,19 @@
 Machine Learning Algorithms Implemented
 ------------------------------------------
 
-mllab/
+mllab
 --------
 Naive Bayes
+--
 Linear Regression
+--
 Logistic Regression
+--
 KMeans
+--
 Decision Tree
+--
 Perceptron
+--
 Support Vector Machines
+--
