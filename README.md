@@ -82,18 +82,44 @@ The quality of data and preprocessing directly impact the accuracy and interpret
   * Standardization (z-score normalization)
 
 ## Data Splitting
+* __Divide dataset__: into training and testing substes. The training set is used to train the model, and the testing set is used to evaluate its performance.
+   * Common split: 80-20 or 70-30 for training and testing respectively. 
 
 ## Feature Engineering
+* __Create New Features__: Generate new features by combining existing ones,
+   * Or applying a mathematical transformation (e.g.: squaring, logarithm)
+   * Or creating interaction terms (a multiplication of two features that you believe have a joint effect on the target)
+   * Or polynomial features to capture more complex relationships
+   * For example, if an input sample is two-dimensional and of the form [a, b], the degree-2 polynomial features are $[1, a, b, a^2, ab, b^2]$.
 
 ## Multicollinearity Handling
+* Calculate the correlation matrix among feature variables to identify highly correlated pairs.
+* Consider correlation threshold (eg. 0.8/0.7) to identify multicollinearity.
+* Remove one of the correlated variables if they provide similar information.
+* Check for multicollinearity (high correlation) among predictor(features) variables, as it can lead to unstable coefficient estimates.
+* Use dimensionality reduction techniques (PCA) if multicollinearity is severe.
 
 ## Residual Analysis
+* Fit a preliminary linear regression model using training data
+* Analyze the residuals (differences between predicted and actual values)
+* Check for patterns, unequal spread of residuals, and outliers in residual plots.
 
 ## Feature Testing and Transformation
+* If necessary transform the feature variables to achieve linearity.
+* Use scatter plots and partial regression plots to assess linearity.
+* Techniques like logarithmic, or exponential transformations can help.
 
 ## Model Building and Evaluation
+* Train the linear regression model using the training data
+* Evaluate the model's performance on testing data: use MSE, RMSE, etc.
+* Interpret the model coefficients to understand the relationship between feature variables and the expected output variable.
 
 ## Model Improvement
+* Based on the model evaluation, iteratively refine the model.
+* By adjusting feature selection, address issues identified in the residual analysis
+* Try different transformations.
+
+__Linear regression assumes a linear relationship between variables, if your results do not show linear patterns, you might consider other regression techniques or non-linear models. Preparation of data is an iterative process that requires careful consideration, domain knowledge, and experimentation to build a robust linear regression model.__
 
 
 Algorithms Implemented
