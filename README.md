@@ -52,7 +52,7 @@ A statistical process for estimating the relationships between a dependent varia
  * __Energy Demand Forecasting__: Predicting energy demand based on historical consumption patterns and weather conditions.
 
 # Data Preparation for Linear Regression
-The quality of data and preprocessing directly impact the accuracy and interpretability of your results. Here are key steps in data preparation for linear regression:
+The quality of data and preprocessing directly impact the accuracy and interpretability of your results. Here are the key steps in data preparation for linear regression:
 
 ## Data Collection and Inspection
 * __Gather data__: dependent variable (target) and independent variable (predictors).
@@ -73,8 +73,13 @@ The quality of data and preprocessing directly impact the accuracy and interpret
 * __Multicollinearity__: statistical concept where several independent variables in a model are correlated.
 
 ## Feature Transformation
-* __Categorical variables__: Convert categorical variables into numerical representations: eg: one-hot encoding or label encoding
-* __Scaling__: 
+* __Categorical variables__: Convert categorical variables into numerical representations
+  * __One-hot encoding__: for nominal variables (information to distinguish objects: eg: zip code, employee id, eye color, gender: 🕵️‍♂️, female)
+  * __Label encoding__: for ordinal variables (enough information to order objects: hardness of minerals, grades, street numbers, quality:{good, better, best})
+* __Scaling__: Normalize or standardize numerical features to ensure they are on the same scale.
+  * This helps prevent variables with larger magnitudes from dominating the model.
+  * Mix-max scaling
+  * Standardization (z-score normalization)
 
 ## Data Splitting
 
