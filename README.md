@@ -51,6 +51,44 @@ A statistical process for estimating the relationships between a dependent varia
  ### Energy Consumption Analysis:
  * __Energy Demand Forecasting__: Predicting energy demand based on historical consumption patterns and weather conditions.
 
+# Data Preparation for Linear Regression
+The quality of data and preprocessing directly impact the accuracy and interpretability of your results. Here are key steps in data preparation for linear regression:
+
+## Data Collection and Inspection
+* __Gather data__: dependent variable (target) and independent variable (predictors).
+* __Inspect__: the dataset for its structure, size, and variable types.
+* __Identify__: the dependent (y) and independent variables (x1,x2,x3,.....,xn).
+* __Check__: for missing values, outliers, and anomalies in the data.
+
+## Data Cleaning
+* __Handle missing values__: Decide whether to remove or impute missing values based on the nature of the data.
+* __Imputation techniques__: Mean, median, mode imputation, or using predictive models to impute missing values.
+* __Outlier Detection__: Identify outliers that might negatively affect the prediction model. Visualize using (box plots, scatter plots) and statistical methods (z-score, IQR)
+* __Decide__: whether to remove, transform, or treat outliers based on domain knowledge.
+* __Consider__: techniques like winsorization, log transformation, or replacing outliers with a reasonable value.
+
+## Feature Selection
+* __Identify relevant features__: Examine the datasets to select the most relevant predictor variables (feature input).
+* __Exclude__: variables that are irrelevant or might introduce multicollinearity.
+* __Multicollinearity__: statistical concept where several independent variables in a model are correlated.
+
+## Feature Transformation
+* __Categorical variables__: Convert categorical variables into numerical representations: eg: one-hot encoding or label encoding
+* __Scaling__: 
+
+## Data Splitting
+
+## Feature Engineering
+
+## Multicollinearity Handling
+
+## Residual Analysis
+
+## Feature Testing and Transformation
+
+## Model Building and Evaluation
+
+## Model Improvement
 
 
 Algorithms Implemented
